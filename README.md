@@ -19,7 +19,7 @@ I have been learning JavaScript for a few weeks and have practiced coding variou
 - ES6 Features (Arrow Functions, Let/Const, Template Literals, Destructuring, etc.)
 - Object-Oriented Programming (OOP)
 - Web Storage (LocalStorage, SessionStorage)
-- API Interaction (Fetch, Async/Await)
+- API Interaction (Axios , XHR , Fetch, Async/Await)
 
 ## Technologies Used
 
@@ -27,13 +27,3 @@ I have been learning JavaScript for a few weeks and have practiced coding variou
 - HTML
 - CSS (for styling some projects)
 - APIs (for fetching and displaying data)
-
-
-
-## How to Run
-
-To view the projects, follow these steps:
-
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/JavaScript-Practice-Projects.git
