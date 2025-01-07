@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Arrow Function </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+
+        <!-- JS -->
+        <script>
+
+            var students = [
+                {
+                    name : "Kamal" ,
+                    gpa : 3.14 ,
+                    id : 101 
+                },
+                {
+                    name : "matin" ,
+                    gpa : 4.44 ,
+                    id : 102 
+                },
+                {
+                    name : "Ali" ,
+                    gpa : 3.45 ,
+                    id : 103 
+                },
+                {
+                    name : "Sabbir" ,
+                    gpa : 3.65 ,
+                    id : 104
+                },
+                {
+                    name : "Rahman" ,
+                    gpa : 4.78 ,
+                    id : 105
+                }
+
+            ] ;
+
+            function fun()
+            {
+                return students.filter((x)=>{
+                    return x.gpa>4 ; // jader gpa 4 er besi tader filter korlam
+                }).map((y)=>{
+                    return y.name // filter function jader k return korbe tader name gula return korchi 
+                }) ;
+            }   
+
+            console.log("Good students : ",fun());
+
+        </script>
+        
+    </body>
+
+</html>

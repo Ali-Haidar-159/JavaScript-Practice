@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>  </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+            p{
+                color: tomato;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+            <h5>Do you want to save this file ?</h5>
+            <button id="btn">Save</button>
+            <p></p>
+        <!-- JS -->
+        <script>
+
+
+            var saveButton = document.querySelector("#btn") ;
+            var msg = document.querySelector("p") ;
+
+
+            saveButton.addEventListener("click",()=>{
+                msg.textContent = "your file is saved" ;
+
+                setTimeout(function(){
+                    msg.textContent="" ;
+                },3000) ;
+
+            }) ;
+
+            
+
+
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Spread Operator-2 </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">    
+        <meta name="author" content="Ali">
+
+        <!-- CSS  -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+            <h2 style="margin-top: 50vh; text-align: center;">Hey Bro ! This is Ali</h2>
+
+        <!-- JS -->
+        <script>
+
+            function numbers (x,y,...z) 
+            {
+                console.log(`x = ${x} , y = ${y} , z = ${z}`) ;
+            }
+
+            var n = [10,20,30,40,50,60] ;
+
+            numbers(n[0],n[1]);
+            numbers(...n) ;
+
+        </script>
+        
+    </body>
+
+</html>

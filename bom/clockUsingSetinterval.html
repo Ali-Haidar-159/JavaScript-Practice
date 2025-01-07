@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Digital Clock </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+
+            button{
+                display: block;
+                cursor: pointer;
+                width: 120px;
+                height: 30px;
+                color: white;
+                background-color: tomato;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 30px;
+                border: none;
+                font-weight: bold;
+            }
+
+            #clockDiv{
+                width: 30%;
+                margin: 0 auto;
+                color: brown;
+                /* border: 3px solid black; */
+            }
+
+            h1{
+                text-align: center;
+                font-size: 4rem;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+            <div id="clockDiv">
+
+                <h1><span id="hour">0</span> : <span id="min">0</span> : <span id="sec">0</span></h1>
+
+            </div>
+
+            <button>Start</button>
+
+        <!-- JS -->
+        <script src="./clockUsingSetinterval.js"></script>
+        
+    </body>
+
+</html>

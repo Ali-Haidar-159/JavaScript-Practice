@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>JavaScript Practice</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        
+        <script>
+
+            var firstName , lastName , fullName ;
+
+            firstName = prompt("Enter your first name : ")  ; 
+            lastName = prompt("Enter your last name : ")  ;
+
+            fullName = firstName.concat(lastName) ;
+
+            var len ;
+            len = fullName.length ;
+            document.write("The length of full name is : "+len+"<br>") ;
+
+            var char ;
+            char = firstName.charAt(0) ;
+            document.write("The 0th index char is : "+char+"<br>") ;
+
+            var upperCase ;
+            upperCaseName = fullName.toUpperCase() ;
+            document.write("The upper case name is : "+upperCaseName+"<br>") ;
+
+
+            var lenOfFirstName , slicedName ;
+            lenOfFirstName = firstName.length ;
+            slicedName = fullName.slice(0,lenOfFirstName) ;
+            document.write("The sliced first name is : "+slicedName+"<br>") ;
+
+        </script>
+
+    </body>
+
+</html>

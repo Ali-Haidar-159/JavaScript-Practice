@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Attribute Value Change</title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice website"> 
+        <meta name="author" content="Ali"> 
+
+    </head>
+
+    <body>
+
+        <img src="./html.png" alt="image missing" id="image1">
+
+        <button onclick="change()">Click Me For Change</button>
+
+        <script>
+
+            var x = document.getElementById("image1") ;
+
+            function change()
+            {
+                x.setAttribute("src","java.png") ;
+                x.setAttribute("alt","No  image") ;
+            }
+
+        </script>
+        
+    </body>
+
+</html>

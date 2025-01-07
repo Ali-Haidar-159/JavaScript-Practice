@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>   </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+        
+
+        <!-- JS -->
+        <script>
+
+
+
+            var clock = document.createElement("h1") ;
+
+            document.body.appendChild(clock) ;
+
+            function getTime()
+            {
+
+                var date = new Date() ;
+                var hour , min , sec ;
+
+                hour = date.getHours() ;
+                min = date.getMinutes() ;
+                sec = date.getSeconds() ;
+
+                if(sec<10)
+                    clock.textContent = hour+" : "+min+" : 0"+sec ;
+                else
+                    clock.textContent = hour+" : "+min+" : "+sec ;
+
+
+                
+                setInterval(getTime,1000) ;
+
+            }
+
+            getTime() ;
+
+
+
+        </script>
+        
+    </body>
+
+</html>

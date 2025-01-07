@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Addition</title>
+
+        <!-- all meta tags  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="ali">
+
+    </head>
+
+    <body>
+        
+        <script>
+            
+            var n , m , sum=0 ; 
+
+            n = prompt("Enter the first number : ") ;
+            m = prompt("Enter the second number : ") ;
+
+            n = parseInt(n) ;
+            m = parseInt(m) ;
+
+            document.write("n = "+n+"<br>") ;
+            document.write("m = "+m+"<br>") ;
+
+            for(var i=n ; i<=m ; i++)
+            {
+                sum = sum + i ;
+            }
+
+            document.write(`The sum is (n+m) : ${sum}`) ;
+
+        </script>
+
+    </body>
+
+</html>

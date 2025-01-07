@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Mouse Move </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+
+            div{
+                background-color: tomato;
+                width: 15rem;
+                height: 12rem;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 0 auto;
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div>
+            <h5>Bangladesh</h5> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam.</p>
+
+        </div>
+
+        <script>
+
+            console.clear() ;
+
+            var div = document.querySelector("div") ;
+
+            div.addEventListener("click",function(e){
+                // console.log(e) ;
+                // console.log(e.target) ;
+                console.log(e.target.innerHTML) ;
+                console.log(e.target.innerText) ;
+            }) ;
+
+
+        </script>
+
+    </body>
+
+</html>

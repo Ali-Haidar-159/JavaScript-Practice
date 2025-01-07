@@ -1,0 +1,68 @@
+/* basic design starts here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(233, 230, 230) ;
+}
+
+/* basic design ends here  */
+
+/* header design starts here */
+
+#headerDiv{
+    text-align: center;
+    padding: 2%;
+    margin: 10px 0px ;
+    color: tomato;
+}
+
+/* header design ends here  */
+
+
+/* mainDiv design starts here */
+
+#mainDiv{
+    text-align: center;
+}
+
+#mainDiv form input{
+    width: 40%;
+    height: 50px;
+    text-align: center;
+}
+
+#mainDiv form textarea{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    resize: none;
+    width: 40%;
+    height: 150px ;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+#btn{
+    margin: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#btn:hover{
+    background-color: white;
+    color: tomato;
+    border: 2px solid tomato;
+}
+
+/* mainDiv design ends here */

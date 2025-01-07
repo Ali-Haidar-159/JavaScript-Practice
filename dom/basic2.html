@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>  </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+    </head>
+
+    <body>
+
+        <h1 id="head1">Bangladesh</h1>
+
+        <p class="text1">Bangladesh is a small country</p>
+        <p class="text1">Nowadays Bangladesh is a digital country</p>
+
+        <b>This is line 1</b>
+        <br>
+        <b>This is line 2</b>
+        <br>
+        <a href="#">Click me</a>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+        
+        
+        <script>
+
+            var x = document.querySelector("#head1") ; //using id 
+            // var x = document.getElementById("head1") ;
+            x.innerHTML = "Pakistan" ;
+
+
+            var y = document.querySelectorAll(".text1"); //using class 
+            // var y = document.getElementsByClassName("text1")[1] ;
+            y.innerHTML = "Hey bro this is ali" ;
+
+            var z = document.querySelector("b") ;
+            // var z = document.getElementsByTagName("b")[1] ;
+            z.innerHTML = "East West" ;
+
+            var zz = document.querySelector("ul li a") ;
+            zz.innerHTML = "About me" ;
+
+        </script>
+
+    </body>
+
+</html>

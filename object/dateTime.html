@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Date And Time </title>
+
+        <!-- all meta tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice website"> 
+        <meta name="author" content="Ali"> 
+
+    </head>
+
+    <body>
+        
+        <script>
+
+            var date = new Date () ; 
+
+            document.write("All Details : "+date+"<br>") ;
+
+            var year = date.getFullYear() ;
+            document.write("Year : "+year+"<br>")
+
+            var month = date.getMonth() ;  // month index start from 0 . so January means 0 , December means 11
+            document.write("Month : "+month+"<br>")
+
+            var currentDate = date.getDate() ;
+            document.write("Date : "+currentDate+"<br>")
+
+            var day = date.getDay() ;
+            document.write("Day : "+day+"<br>") //sunday index start from 0
+
+            var hour = date.getHours() ;
+            document.write("Hour : "+hour+"<br>")
+
+            var minute = date.getMinutes() ;
+            document.write("Minute : "+minute+"<br>")
+
+        </script>
+
+    </body>
+
+</html>

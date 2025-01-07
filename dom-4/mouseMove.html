@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Mouse Move </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+
+            div{
+                background-color: tomato;
+                width: 15rem;
+                height: 12rem;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 0 auto;
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div>
+            <!-- this is test div  -->
+        </div>
+
+        <script>
+
+            console.clear() ;
+
+
+            var div = document.querySelector("div") ;
+            div.addEventListener("mousemove",function(e){
+
+                //find the x,y axis from the window
+                //console.log("X = "+e.clientX +", Y = "+e.clientY) ;
+
+                // find the x,y axis from the div
+                console.log("X = "+e.offsetX +", Y = "+e.offsetY) ;
+
+
+            }) ;
+
+
+        </script>
+
+    </body>
+
+</html>

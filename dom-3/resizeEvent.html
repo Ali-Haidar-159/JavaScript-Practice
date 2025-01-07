@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Resize Event </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+    </head>
+
+    <body>
+
+        <script>
+
+            window.addEventListener("resize",function(){
+               // console.log("Resizing") ;
+
+                var height = window.outerHeight ; // height ta print hbe 
+                var width = window.outerWidth ; // width ta print hbe 
+
+                console.log(`Height : ${height} and width :${width}`) ;
+            }) ;
+
+        </script>
+
+    </body>
+
+</html>

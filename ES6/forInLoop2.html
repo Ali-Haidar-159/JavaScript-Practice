@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> For In Loop-2 </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">    
+        <meta name="author" content="Ali">
+
+        <!-- CSS  -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+            <h2 style="margin-top: 50vh; text-align: center;">Hey Bro ! This is Ali</h2>
+
+        <!-- JS -->
+        <script>
+
+            var students = [
+
+                {
+                    name : "Ali" ,
+                    Id : 101 ,
+                    gpa : 5.00
+                } ,
+                {
+                    name : "Kamal" ,
+                    Id : 102 ,
+                    gpa : 5.00
+                } ,
+                {
+                    name : "Jabbar" ,
+                    Id : 103 ,
+                    gpa : 5.00
+                }
+
+            ] ;
+
+            for (var v of students)
+            {
+                // console.log(JSON.stringify(v)) ;
+
+                for(var x in v)
+                {
+                    if(x === "name") // only name print of every object , using forIn and forOf loop
+                    {
+                        console.log(v[x])
+                    }
+                }
+            }
+
+
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		
+		<title> Escape & Unescape </title>
+		
+		<!-- all meta tags here  -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="description" content="This is a practice webpage">
+		<meta name="author" content="Ali">
+		
+		<!-- CSS -->
+		<style></style>
+		
+	</head>
+	
+	<body>
+
+        <h2>Go To Console To See Output</h2>
+		
+		<!-- JavaScript -->
+		<script>
+
+            var str = "My name is Ali" ;
+            console.log(`The original string is : ${str}`) ;
+
+            var encodeStr = encodeURI(str) ;
+            console.log(`The encodeStr value of string is : ${encodeStr}.`) ;
+
+            var decodeStr = decodeURI(encodeStr) ;
+            console.log(`The decode value of encode string is : ${decodeStr}.`) ;
+
+
+        </script>
+		
+	</body>
+
+</html>

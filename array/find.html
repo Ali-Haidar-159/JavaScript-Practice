@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> Find Method </title>
+
+    <!-- all meta tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="description" content="This is a practice webpage"> 
+    <meta name="author" content="Ali">
+
+</head>
+
+<body>
+
+    <script>
+
+        var arr = [10,20,30,40,50] ;
+
+        var x = arr.find(function(item,index,array){
+            console.log("The full array is : "+array) ;
+           // return item>20 ; 
+
+            if(item>20)
+            {
+                
+                return item;
+            }
+
+        }) ;
+
+        console.log("The value is :"+x) ;
+
+    </script>
+    
+</body>
+
+</html>

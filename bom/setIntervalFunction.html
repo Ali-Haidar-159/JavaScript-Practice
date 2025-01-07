@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Set-Interval </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+            p{
+                color: tomato;
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+            <h1>Click To Continue</h1>
+            <button>Click Me</button>
+            <p></p>
+
+        <!-- JS -->
+        <script>
+
+            var btn = document.querySelector("button") ;
+            var countMessage = document.querySelector("p") ;
+
+            btn.addEventListener("click",function(){
+                var flag=1 ;
+                countMessage.innerText = flag ;
+
+                setInterval(function(){
+                    flag++ ;
+                    if(flag<=5)
+                        countMessage.innerText = flag ;
+                    else
+                    countMessage.innerText = "End" ;
+                },2000) ;
+
+            }) ;
+
+        </script>
+        
+    </body>
+
+</html>

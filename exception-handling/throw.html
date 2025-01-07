@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>  Throw KeyWord </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+        <p>Enter a number between 5 and 10 : </p>
+        <input type="text" name="number" id="inputField" placeholder="Enter a number" style="height: 20px;"> 
+        <button>Check</button>
+
+        <!-- JS -->
+        <script>
+
+            console.clear() ;
+
+            var btn = document.getElementsByTagName("button")[0] ;
+            // console.log(btn) ;
+            var inputField = document.querySelector("#inputField") ;
+
+            btn.addEventListener("click",()=>{
+                var number = inputField.value ;
+
+                try
+                {
+                    if(number>10)
+                    {
+                        throw "Greater Than 10" ;
+                    }
+                    else if(number<5)
+                    {
+                        throw "Less Than 5" ;
+                    }
+                    else
+                        console.log("Your entered number is : ",number) ;
+                }
+                catch(e)
+                {
+                    console.log("The Exception Is : "+e) ;
+                }
+
+            }) ;
+
+        </script>
+        
+    </body>
+
+</html>

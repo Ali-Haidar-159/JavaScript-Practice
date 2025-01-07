@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Test </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+    </head>
+
+    <body>
+
+        <div>
+            <label for="message">Write something : </label>
+            <input title="hey bro"  type="text" name="message">
+        </div>
+
+        <script>
+
+            console.clear() ;
+
+
+            var field = document.getElementsByTagName("input")[0] ;
+            console.log(field.value) ;
+            //console.log("value1"+field.value) ;
+
+            //field.value ar e.target.value prai akoi jinis .
+
+            field.addEventListener("change",function(e){
+                field.value = "kalam" ;
+                console.log(e.target.value) ;
+                console.log(field.value) ;
+                e.target.value = "" ;
+            }) ;
+
+            
+
+        </script>
+
+    </body>
+
+</html>

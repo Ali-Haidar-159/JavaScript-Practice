@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Form Submit </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+        <!-- css  -->
+
+        <style>
+
+            #nameDiv , #emailDiv , #passwordDiv{
+                margin: 15px ;
+            }
+
+            input[type=submit]{
+                display: block;
+                margin: 10px auto;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="mainDiv" style="width: 300px; margin: 10px auto;">
+
+            <form action="">
+
+                <div id="datalistDiv">
+                    <datalist id="nameDatalist">
+                        <option value="Ali Haidar">Ali Haidar</option>
+                        <option value="Kamal Uddin">Kamal Uddin</option>
+                        <option value="Abdul Jabbar">Abdul Jabbar</option>
+                        <option value="Abdur Rahman">Abdur Rahman</option>
+                    </datalist>
+                </div>
+
+                <div id="nameDiv">
+
+                    <label for="fullName">Name :
+                        <input type="text" name="fullName" id="fullName" list="nameDatalist" required>
+                    </label>
+
+                </div>
+
+                <div id="emailDiv">
+
+                    <label for="email">Email : 
+                        <input type="email" id="email" name="email" required>
+                    </label>
+
+                </div>
+
+                <div id="passwordDiv">
+                    <label for="password">Password : 
+                        <input type="password" id="password" name="password" required>
+                    </label>
+                </div>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+        <script src="./submitEvent.js"></script>
+
+    </body>
+
+</html>

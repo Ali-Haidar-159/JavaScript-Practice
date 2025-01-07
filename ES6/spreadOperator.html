@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Spread Operator </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">    
+        <meta name="author" content="Ali">
+
+        <!-- CSS  -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+            <h2 style="margin-top: 50vh; text-align: center;">Hey Bro ! This is Ali</h2>
+
+        <!-- JS -->
+        <script>
+
+
+            function sum(x,y,z)
+            {
+                return x+y+z ;
+            }
+
+
+            var n = [10,20,30] ;
+
+            console.log("Without Spread Operator : "+sum(n[0],n[1],n[2])) ;
+            console.log("Using Spread Operator : " + sum(...n)) ;
+
+
+        </script>
+        
+    </body>
+
+</html>

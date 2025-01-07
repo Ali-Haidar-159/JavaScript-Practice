@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Prompt Function </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+            
+
+        <!-- JS -->
+        <script>
+
+            var name = prompt("Enter your name : ") ;
+
+            var message = document.createElement("h1") ;
+
+            if(name==="null" || name === "")
+            {
+                var textNode = document.createTextNode("Empty Name Field") ;
+            }
+            else
+            {
+                var textNode = document.createTextNode("Your name is : "+name) ;
+            }
+
+            message.appendChild(textNode) ;
+            document.body.appendChild(message) ;
+
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>For Each Loop</title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice website"> 
+        <meta name="author" content="Ali"> 
+
+    </head>
+
+    <body>
+
+        <script>
+
+            var marks = [90,80,75,70] ;
+
+            marks.forEach(function(value,index)
+                            {
+                                document.write(index +" : "+value+"<br>") ;
+                            }
+                        ) ;
+
+            
+
+            var names = ["ali","haidar","kamal","jabbar"] ;
+            function printNames (value,index) 
+            {
+                document.write(`<strong>${index+1}st person name : </strong>`+value+"<br>") ;
+            }
+
+            names.forEach(printNames) ;
+            
+
+        </script>
+        
+    </body>
+
+</html>

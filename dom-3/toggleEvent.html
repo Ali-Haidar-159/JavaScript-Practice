@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Toggle Event </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="This is a  practice website">
+        <meta name="author" content="Ali">
+
+    </head>
+
+    <body>
+
+        <details>
+
+            <summary>Ali Haidar</summary>
+
+            My name is Ali Haidar . I am a  student of CSE department . This is my 9th semester runnging . Now i am learning JavaScript.
+
+        </details>
+
+        <script>
+
+            var details = document.querySelector("details") ;
+            details.addEventListener("toggle",function(e){
+                //console.log("Toggling the component") ;
+
+                console.log(e.target.open) ; //toggle ta open hole ba component ti open hole True return korbe
+
+            }) ;
+
+        </script>
+
+    </body>
+
+</html>

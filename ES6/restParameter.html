@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>  Rest Parameter </title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">    
+        <meta name="author" content="Ali">
+
+        <!-- CSS  -->
+        <style></style>
+
+    </head>
+
+    <body>
+
+            <h2 style="margin-top: 50vh; text-align: center;">Hey Bro ! This is Ali</h2>
+
+        <!-- JS -->
+        <script>
+
+            //This is like  "variable length argument" function in Java
+
+            function numbers (x,y, ... z) // z acts like an Array 
+            {
+                console.log(`x = ${x} , y = ${y} , z = ${z}`) ;
+            }
+
+            numbers(10,20,30,40,50,60) ;
+            numbers(100,200) ;
+            numbers(999) ;
+
+        </script>
+        
+    </body>
+
+</html>

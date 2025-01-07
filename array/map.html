@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> Map Exercise </title>
+
+    <!-- all meta tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="description" content="This is a practice webpage"> 
+    <meta name="author" content="Ali">
+
+</head>
+
+<body>
+
+    <script>
+
+        var size ;
+        var arr = new Array(size) ;
+
+        size = Number(prompt("Enter the array size : ")) ;
+
+        var i = 0 ;
+        while(i<size)
+        {
+            arr[i] = prompt(`Enter ${i+1}th number : `) ;
+            i++ ;
+        }
+
+        console.log("The original array is : ") ;
+        arr.forEach(function(item){
+            console.log(item) ;
+        }) ;
+
+        var newArr = arr.map(function(item){
+            return item*2 ; //return a value but stored in the newArr 
+        }) ;
+
+        console.log("After multiply 2 , the new array is : ") ;
+        console.log(newArr) ;
+        
+
+
+    </script>
+    
+</body>
+
+</html>

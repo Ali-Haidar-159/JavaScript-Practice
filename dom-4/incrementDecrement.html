@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> Counter App </title>
+
+        <!-- all meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- css -->
+        <style>
+
+            button{
+                width: 80px;
+                height: 40px;
+                font-size: 2rem;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+                color: white;
+                margin: 10px;
+            }
+
+            #plusBtn{
+                background-color: green;
+                border: 2px solid green;
+            }
+
+            #plusBtn:hover{
+                background-color: transparent;
+                border: 2px solid green;
+                color: black;
+            }
+
+            #minusBtn{
+                background-color: red;
+                border: 2px solid red;
+            }
+
+            #minusBtn:hover{
+                background-color: transparent;
+                border: 2px solid red;
+                color: black;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div id="numberDiv">
+            <h2 id="number">0</h2>
+        </div>
+
+        <div id="buttonDiv">
+
+            <button id="plusBtn">+</button>
+            <button id="minusBtn">-</button>
+
+        </div>
+
+        <!-- JavaScript -->
+
+        <script src="./incrementDecrement.js"></script>
+        
+    </body>
+
+</html>

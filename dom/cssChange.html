@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>DOM CSS Change</title>
+
+        <!-- all meta tags here  -->
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice website"> 
+        <meta name="author" content="Ali"> 
+
+        <style>
+
+            #div1{
+                margin: 0 auto ;
+                width: 300px;
+                height: 300px;
+                border-radius: 30px;
+            }
+
+            button {
+                display: block;       
+                margin: 20px auto;    
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="div1" style="background-color: aquamarine;color: rgb(12, 12, 12);">
+
+            <h1 style="text-align: center;">Bangladesh</h1>
+
+        </div>
+
+        <button onclick="change()">Click Me</button>
+
+        <script>
+
+            var x = document.getElementById("div1") ;
+
+            function change()
+            {
+                x.style.backgroundColor = "red" ;
+                x.style.color = "white" ;
+
+            }
+
+        </script>
+        
+    </body>
+
+</html>
