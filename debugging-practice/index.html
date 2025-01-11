@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <title>Debugging Practice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage">
+        <meta name="author" content="Ali">
+
+        <!-- milligram css connection  -->
+        <link rel="stylesheet" href="./milligram.min.css">
+
+        <!-- my css  -->
+        <style>
+
+            #container{
+                margin: 0 auto;
+                padding: 10px;
+            }
+            
+            button{
+                display: block;
+                margin: 10px auto;
+            }
+
+            h3{
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="bodyDiv" class="row">
+
+            <div id="container" class="column column-90">
+
+                <form action="mailto:" method="post" enctype="text/plain">
+
+                    <fieldset>
+
+                        <label for="">Number-1</label>
+                        <input type="text" id="number1">
+
+                        <label for="">Number-2</label>
+                        <input type="text" id="number2">
+
+                        <label for="">Number-3</label>
+                        <input type="text" id="number3">
+
+                        <h3 id="result">Result : </h3>
+
+                    </fieldset>
+
+                </form>
+
+                <button id="btn">Calculate</button>
+
+            </div>
+
+        </div>
+
+        <script src="./script.js"></script>
+        
+    </body>
+
+</html>
