@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		
+		<title>Skills Set</title>
+		
+		<!-- all meta tags here  -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<meta name="description" content="This is a practice website to learn">
+		<meta name="author" content="Ali Haidar">
+		
+		<!-- connection milligram CSS  -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+		
+		<!-- my css  -->
+		
+		<style>
+		
+			#mainDiv{
+				height : 100vh ;
+				display : flex ;
+				justify-content : center ;
+				align-items : center ;
+				background-color : tomato ;
+			}
+			
+			#skillDiv{
+			
+				width : 65% ;
+				background-color:#ddd ;
+				border-radius : 20px ;
+				padding : 15px ;
+				margin:15px ;
+			}
+			
+			input[type=text]{
+				
+				background-color : white ;
+				margin-bottom : 10px ;
+			}
+			
+			button{
+				margin:5px ;
+			}
+		
+		</style>
+				
+	</head>
+	
+	<body>
+	
+		<header></header>
+		
+		<main>
+			
+			<div id="mainDiv">
+			
+				<div id="skillDiv">
+				
+					<input type="text" name="skills" placeholder="Enter a skill ">
+				
+				</div>
+				<button id="addBtn">&nbsp; <span style="font-size:25px">+</span> &nbsp;</button>
+				<button id="getBtn">&nbsp; <span style="font-size:25px">GET</span> &nbsp;</button>
+			
+			</div>
+			
+		</main>
+		
+		<footer></footer>
+		
+		<script src="./index.js"></script>
+	
+	</body>
+
+</html>
