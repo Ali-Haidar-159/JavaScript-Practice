@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Document</title>
+
+        <!-- all meta tags here  -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice website">
+        <meta name="author" content="Ali">
+
+        <!-- connection with milligram css  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <!-- my-css connection -->
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header></header>
+
+        <main>
+
+            <div id="mainDiv">
+
+                <div id="leftDiv">
+
+
+                    <div id="formDiv">
+
+                        <form action="/xyz" method="post">
+
+                            <div id="nameDiv">
+
+                                <label for="name">Name : </label>
+                                <input type="text" name="name" id="name" required>
+
+                            </div>
+
+                            <div id="ageDiv">
+
+                                <label for="age">Age : </label>
+                                <input type="number" name="age" id="age" required> 
+
+                            </div>
+
+                            <div>
+
+                                <label for="skills">Skills : </label>
+
+                                <div id="skillsDiv">
+                                    
+                                    <input type="text" name="skills[]" placeholder="Enter your skill">
+    
+                                </div>
+
+                                <button id="addBtn">Add</button>
+
+                            </div>
+
+                            <button type="submit">Submit</button>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+                <div id="rightDiv">
+
+                    <h2 id="name2" style="text-align: center;">Name</h2>
+
+                    <h6><strong>AGE : </strong> <span id="age2"></span></h6>
+
+                    <h4 style="display: inline-block;"><strong>Skills : </strong></h4>
+
+                    <h6 style="display: inline-block;" id="skills2"></h6>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer></footer>
+
+        <script src="script.js"></script>
+        
+    </body>
+
+</html>

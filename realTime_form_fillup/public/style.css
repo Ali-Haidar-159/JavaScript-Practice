@@ -1,0 +1,33 @@
+/* initial design  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* main design  */
+
+#mainDiv{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+
+}
+
+#leftDiv , #rightDiv{
+
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+}
